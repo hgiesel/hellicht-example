@@ -1,3 +1,13 @@
+:root {
+  --brand-primary: #ec6842;
+  --brand-secondary: #313945;
+
+  --brand-white: #ffffff;
+  --brand-gray-1: #f9f9f9;
+  --brand-gray-2: #bcbcbc;
+  --brand-gray-3: #747474;
+  --brand-black: #333333;
+}
 * {
   box-sizing: border-box;
 }
