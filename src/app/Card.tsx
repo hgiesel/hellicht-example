@@ -5,15 +5,15 @@ export default function Card({
   title,
   subtitle,
   children,
-  backgroundColor = 'white',
+  className,
 }: {
   title: ReactNode;
   subtitle: ReactNode;
   children: ReactNode;
-  backgroundColor?: string;
+  className?: string;
 }) {
   return (
-    <div className={styles.card} style={{ backgroundColor }}>
+    <div className={`${className} ${styles.card}`}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.subtitle}>{subtitle}</p>
       {children}

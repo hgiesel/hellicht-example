@@ -1,6 +1,11 @@
+.title {
+  text-align: center;
+}
 
 .cardCarousel {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5rem;
 }

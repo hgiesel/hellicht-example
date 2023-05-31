@@ -2,12 +2,21 @@
   --brand-primary: #ec6842;
   --brand-secondary: #313945;
 
-  --brand-white: #ffffff;
-  --brand-gray-1: #f9f9f9;
-  --brand-gray-2: #bcbcbc;
-  --brand-gray-3: #747474;
-  --brand-black: #333333;
+  --surface-50: #ffffff;
+  --surface-100: #f9f9f9;
+  --surface-400: #bcbcbc;
+  --surface-500: #bcbcbc;
+  --surface-800: #747474;
+  --surface-900: #333333;
+
+  --on-surface-50: #333333;
+  --on-surface-100: #747474;
+  --on-surface-400: #bcbcbc;
+  --on-surface-500: #bcbcbc;
+  --on-surface-800: #f9f9f9;
+  --on-surface-900: #ffffff;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -26,5 +35,45 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.bg-primary-token {
+  background-color: var(--brand-primary);
+}
+
+.bg-secondary-token {
+  background-color: var(--brand-secondary);
+}
+
+.bg-surface-50-900-token {
+  background-color: var(--surface-50);
+
+  :prefers(color-scheme: dark) {
+    background-color: var(--surface-900);
+  }
+}
+
+.bg-surface-900-50-token {
+    background-color: var(--surface-900);
+
+  :prefers(color-scheme: dark) {
+    background-color: var(--surface-50);
+  }
+}
+
+.text-surface-50-900-token {
+  color: var(--surface-50);
+
+  :prefers(color-scheme: dark) {
+    color: var(--surface-900);
+  }
+}
+
+.text-surface-900-50-token {
+  color: var(--surface-900);
+
+  :prefers(color-scheme: dark) {
+    color: var(--surface-50);
   }
 }
