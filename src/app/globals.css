@@ -55,7 +55,7 @@ a {
 }
 
 .bg-surface-900-50-token {
-    background-color: var(--surface-900);
+  background-color: var(--surface-900);
 
   @media (prefers-color-scheme: dark) {
     background-color: var(--surface-50);
