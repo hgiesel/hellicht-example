@@ -49,7 +49,7 @@ a {
 .bg-surface-50-900-token {
   background-color: var(--surface-50);
 
-  :prefers(color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     background-color: var(--surface-900);
   }
 }
@@ -57,7 +57,7 @@ a {
 .bg-surface-900-50-token {
     background-color: var(--surface-900);
 
-  :prefers(color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     background-color: var(--surface-50);
   }
 }
@@ -65,7 +65,7 @@ a {
 .text-surface-50-900-token {
   color: var(--surface-50);
 
-  :prefers(color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     color: var(--surface-900);
   }
 }
@@ -73,7 +73,7 @@ a {
 .text-surface-900-50-token {
   color: var(--surface-900);
 
-  :prefers(color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     color: var(--surface-50);
   }
 }
