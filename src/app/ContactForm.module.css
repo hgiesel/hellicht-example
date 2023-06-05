@@ -1,0 +1,14 @@
+.field {
+  padding: 2rem;
+}
+
+.textInput {
+  width: 100%;
+  resize: vertical;
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
